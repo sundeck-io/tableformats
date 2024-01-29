@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunktableformats=self.webpackChunktableformats||[]).push([[2526],{691:a=>{function s(a){a.languages.csv={value:/[^\r\n,"]+|"(?:[^"]|"")*"(?!")/,punctuation:/,/}}a.exports=s,s.displayName="csv",s.aliases=[]}}]);
+//# sourceMappingURL=react-syntax-highlighter_languages_refractor_csv.53fb60f7.chunk.js.map

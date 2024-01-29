@@ -121,7 +121,7 @@ const App = ({ message }) => (
 
           <Card title="Introduction" >
             <p>This data forms the basis for the <a href="https://medium.com/@jacques-n/2024-lakehouse-format-rundown-7edd75015428">2024 Lakehouse Format Rundown</a> blog post.</p>
-            <p>The content below is available under the <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 license</a> within GitHub. Corrections & improvements are welcome.</p>
+            <p>The content below is available under the <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 license</a> within <a href="https://github.com/sundeck-io/tableformats">GitHub</a>. Corrections & improvements are welcome.</p>
             <p>Original content was created by the <a href="https://sundeck.io/">Sundeck</a> team in an effort to provide a neutral evaluation to anyone trying to understand what is going on in Lakehouse formats 
             without being distratcted by vendor agendas and obfuscation. We strongly believe in the longterm vision of the fairhouse as described in the blog post linked above.</p>
           </Card>

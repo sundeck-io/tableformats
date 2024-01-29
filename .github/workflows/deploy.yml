@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # Set your default branch here
+      - main
 
 jobs:
   build-and-deploy:
@@ -13,19 +13,27 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
+    - name: Cache dependencies
+      uses: actions/cache@v2
+      with:
+        path: ~/.yarn
+        key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-yarn-
+
     - name: Use Node.js
       uses: actions/setup-node@v1
       with:
-        node-version: '21'  # Set your Node.js version here
+        node-version: '21'
 
     - name: Install dependencies
       run: yarn install
 
     - name: Build
-      run: yarn build  # Replace with your build script
+      run: yarn build
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./build  # Replace with your build directory
+        publish_dir: ./build

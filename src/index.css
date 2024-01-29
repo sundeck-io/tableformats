@@ -11,3 +11,83 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.ant-card {
+  height: auto;
+  /* overflow: visible; */
+}
+
+.engine-support {
+  .iceberg-header {
+    background-color: blue;
+    color: white;
+    font-size: medium;
+  }
+  
+   .delta-header {
+    background-color: red;
+    color: white;
+    font-size: medium;
+  }
+  
+  .hudi-header {
+    background-color: brown;
+    color: white;
+    font-size: medium;
+  }
+  
+  .ag-header-cell-label {
+    /* Necessary to allow for text to grow vertically */
+    height: 100%;
+    padding: 0 !important;
+  }
+  
+  .ag-header-cell-label {
+    /* Necessary to allow for text to grow vertically */
+    height: 100%;
+    padding: 0 !important;
+  }
+  
+  .ag-header-cell-label .ag-header-cell-text {
+    /* Force the width corresponding to how much width
+    we need once the text is laid out vertically */
+    width: 100%;
+    text-align: center;
+    transform: rotate(270deg);
+    /* Since we are rotating a span */
+    display: inline-block;
+  }
+  
+  .ag-floating-filter-body input {
+    height: 49px;
+  }
+  
+  .ag-floating-filter-button {
+    margin-top: -49px;
+  }
+  
+  .ag-floating-filter-button button {
+    height: 49px
+  }
+  
+   .ag-floating-filter-body input {
+    font-size: 15px;
+    font-weight: bold;
+  }
+}
+
+.blame {
+  .ag-center-cols-container {
+    border-bottom: 1px solid #111;
+  }
+  .ag-cell {
+      border-right: 1px solid #111;
+  }
+  .ag-row-odd {
+    background-color: #F5F5F5;
+  }
+}
+
+.ant-card {
+  margin-top:20px;
+}

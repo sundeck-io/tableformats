@@ -175,21 +175,6 @@ const iceberg= [
     ]},    
 ];
 
-const iceberg2= [
-  {field: "iceberg.doc", headerName: "Docs", cellRenderer: linkRenderer},
-  {field: "iceberg.direct", headerName: "Direct Read"},
-  {field: "iceberg.dynamo", headerName: "DynamoDB", tooltipField:"idynamonotes"},
-  {field: "iceberg.hms", headerName: "HMS"},
-  {field: "iceberg.jdbc", headerName: "JDBC"},
-  {field: "iceberg.nessie", headerName: "Project Nessie"},
-  {field: "iceberg.biglake", headerName: "BigLake"},
-  {field: "iceberg.unity", headerName: "Unity"},
-  {field: "iceberg.arctic", headerName: "Arctic"},
-  {field: "iceberg.glue", headerName: "Glue"},
-  {field: "iceberg.snowflake", headerName: "Snowflake"},
-  {field: "iceberg.tabular", headerName: "Tabular"}
-];
-
 const delta= [
     {field: "delta.doc", headerName: "Docs", cellRenderer: linkRenderer},
     {field: "delta.direct", headerName: "Direct Read"},

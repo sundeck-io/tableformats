@@ -5,14 +5,13 @@ import DeltaBlameData from './deltablame';
 import { CopyBlock } from 'react-code-blocks';
 import HudiBlameData from './hudiblame';
 import IcebergBlameData from './icebergblame';
-import { Alert } from 'antd';
 import dedent from 'dedent';
 import Contribution from './contribution';
 
 
 
 function employed(params) {
-  if (params.value == "yes") return "💰";
+  if (params.value === "yes") return "💰";
   return ""  
 }
 
@@ -134,7 +133,7 @@ const items = [
     `
     git clone git@github.com:delta-io/delta.git
     cd delta
-    git ls-tree -r -z --name-only HEAD -- spark/src/main/* | sed 's/^/.\//' | xargs -0 -n1 git blame --line-porcelain HEAD | grep -ae "^author-mail "|sort|uniq -c|sort -nr`)
+    git ls-tree -r -z --name-only HEAD -- spark/src/main/* | sed 's/^/.//' | xargs -0 -n1 git blame --line-porcelain HEAD | grep -ae "^author-mail "|sort|uniq -c|sort -nr`)
   },
   {
     key: '5',
@@ -142,7 +141,7 @@ const items = [
     children: blameBody(HudiBlameData, "Onehouse Employed", `
       git clone git@github.com:apache/hudi.git
       cd hudi
-      git ls-tree -r -z --name-only HEAD -- hudi-common/src/main* hudi-client/hudi-client-common/src/main/* hudi-client/hudi-spark-client/src/main/* | sed 's/^/.\//' | xargs -0 -n1 git blame --line-porcelain HEAD | grep -ae "^author-mail "|sort|uniq -c|sort -nr
+      git ls-tree -r -z --name-only HEAD -- hudi-common/src/main* hudi-client/hudi-client-common/src/main/* hudi-client/hudi-spark-client/src/main/* | sed 's/^/.//' | xargs -0 -n1 git blame --line-porcelain HEAD | grep -ae "^author-mail "|sort|uniq -c|sort -nr
           `),
   },
   {
@@ -151,7 +150,7 @@ const items = [
     children: blameBody(IcebergBlameData, "Tabular Employed", `
       git clone git@github.com:apache/iceberg.git
       cd iceberg
-      git ls-tree -r -z --name-only HEAD -- core/src/main/* | sed 's/^/.\//' | xargs -0 -n1 git blame --line-porcelain HEAD | grep -ae "^author-mail "|sort|uniq -c|sort -nr`
+      git ls-tree -r -z --name-only HEAD -- core/src/main/* | sed 's/^/.//' | xargs -0 -n1 git blame --line-porcelain HEAD | grep -ae "^author-mail "|sort|uniq -c|sort -nr`
     ),
   },
 ];

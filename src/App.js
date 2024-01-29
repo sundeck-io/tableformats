@@ -13,16 +13,10 @@ import "ag-grid-community/styles/ag-grid.css"; // Core CSS
 import "ag-grid-community/styles/ag-theme-quartz.css"; // Theme
 import { Card, Space, Flex, Layout } from 'antd';
 import EngineSupport from './engines';
-import { Tabs } from 'antd';
 import License from './license';
 import Community from './community';
 
-function linkRenderer(params) {
-  if (params.value === undefined) return null;
-  return <a href={params.value} target="_blank" rel="noopener noreferrer">Link</a>;
-}
-
-const { Header, Footer, Sider, Content } = Layout;
+const { Header, Footer, Content } = Layout;
 
 const headerStyle = {
   textAlign: 'center',
@@ -35,13 +29,6 @@ const contentStyle = {
   minHeight: 120,
   lineHeight: '120px',
   margin: '24px 16px',
-};
-
-const siderStyle = {
-  textAlign: 'center',
-  lineHeight: '120px',
-  color: '#fff',
-  backgroundColor: '#1677ff',
 };
 
 const footerStyle = {
@@ -133,7 +120,7 @@ const App = ({ message }) => (
           <Content style={contentStyle}>
 
           <Card title="Introduction" >
-            <p>This data forms the basis for the <a href="https://medium.com/@jacques-n/2024-lakehouse-format-rundown-7edd75015428" target="_blank">2024 Lakehouse Format Rundown</a> blog post.</p>
+            <p>This data forms the basis for the <a href="https://medium.com/@jacques-n/2024-lakehouse-format-rundown-7edd75015428">2024 Lakehouse Format Rundown</a> blog post.</p>
             <p>The content below is available under the <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 license</a> within GitHub. Corrections & improvements are welcome.</p>
             <p>Original content was created by the <a href="https://sundeck.io/">Sundeck</a> team in an effort to provide a neutral evaluation to anyone trying to understand what is going on in Lakehouse formats 
             without being distratcted by vendor agendas and obfuscation. We strongly believe in the longterm vision of the fairhouse as described in the blog post linked above.</p>

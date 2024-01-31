@@ -116,7 +116,7 @@ const App = ({ message }) => (
     <Space direction="vertical" style={{width: '100%', display:'flex'}} >
       <Flex gap="middle" wrap="wrap">
         <Layout style={layoutStyle}>
-          <Header style={headerStyle}><h1>Lakehouse Format Rundown Backup Data</h1></Header>
+          <Header style={headerStyle}><h1>Lakehouse Format Rundown: Backup Data</h1></Header>
           <Content style={contentStyle}>
 
           <Card title="Introduction" >

@@ -125,7 +125,19 @@ const engineSupportData =[
       doc: "https://hudi.apache.org/docs/quick-start-guide/",
       direct: "rw^", hms: "rw", glue: "rw", summary: "rw"
     }
-
+  },
+    { 
+    engine: "StarRocks", 
+    iceberg: {
+      doc: "https://docs.starrocks.io/docs/data_source/catalog/iceberg_catalog/", dynamo: "", hms: "rw", jdbc: "", nessie: "", biglake: "", unity: "", arctic: "", glue: "rw", snowflake: "", tabular: "rw", summary: "rw"
+    },
+    delta: {
+      doc: "https://docs.starrocks.io/docs/data_source/catalog/deltalake_catalog/", direct: "", hms: "r", unity: "", glue: "", onelake: "", summary: "r"
+    },
+    hudi: { 
+      doc: "https://docs.starrocks.io/docs/data_source/catalog/hudi_catalog/",
+      direct: "", hms: "r", glue: "", summary: "r"
+    }
   },
   { 
     engine: "Trino", 
